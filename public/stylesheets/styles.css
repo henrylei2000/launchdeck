@@ -1,24 +1,35 @@
-#logoBanner {
-    /*width: 75%;*/
-    /*position: relative;*/
-    display: block;
-    margin: 0 auto;
-    padding-top: 3%;
-    max-width:60%;
+.ui.vertical.stripe {
+  padding: 3em 0em;
+}
+.ui.vertical.stripe h3 {
+  font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+  clear: both;
+}
+.ui.vertical.stripe p {
+  font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+  margin: 2em 0em;
 }
 
-#projects {
-    /*-webkit-transition: all .8s ease-in-out;
-	-moz-transition: all .8s ease-in-out;
-	-o-transition: all .8s ease-in-out;
-	transition: all .8s ease-in-out;*/
+.quote.stripe.segment {
+  padding: 0em;
 }
-#reminder {
-    margin-bottom: 0px;
+.quote.stripe.segment .grid .column {
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
-#button1 {
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    color: blue;
+
+.footer.segment {
+  padding: 5em 0em;
+}
+
+.garnetback {
+  background-color: #631919;
 }
