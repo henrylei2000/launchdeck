@@ -1,0 +1,24 @@
+#logoBanner {
+    /*width: 75%;*/
+    /*position: relative;*/
+    display: block;
+    margin: 0 auto;
+    padding-top: 3%;
+    max-width:60%;
+}
+
+#projects {
+    /*-webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;*/
+}
+#reminder {
+    margin-bottom: 0px;
+}
+#button1 {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    color: blue;
+}
