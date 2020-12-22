@@ -18,7 +18,14 @@
   $(document).ready(function() {
     $('.message .close').on('click', function() {$(this).closest('.message').transition('fade');});
     $('.special.cards .image').dimmer({on: 'hover'});
+
+    $('#fellows').hide();
+
+    $('#fellows-more').click(function(e) {
+      e.preventDefault();
+      $('#fellows').show();
     });
+  });
   </script>
 </head>
 <body>
@@ -28,21 +35,20 @@
     <div class="item">
       <img src="images/swatlaunch.png">
     </div>
-    <a class="active item">Home</a>
-    <a class="item" href="./about">About</a>
-    <a class="item" href="./upcoming">Events</a>
-    <a class="item" href="./programs">Programs</a>
+    <a class="item">Home</a>
+    <a class="item" href="./upcoming">Upcoming</a>
     <a class="item" href="./resources">Resources</a>
+    <a class="active item" href="./programs">Programs</a>
+    <a class="item" href="./about">About</a>
   </div>
 
   <div class="ui vertical stripe segment container" style="padding-top: 2em">
     <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <h1 style="text-align: left">Swarthmore LaunchDeck</h1>
-          <p>LaunchDeck is Swarthmore's tech and entrepreneurship club. We provide funding for student projects, create workshops, and host speaker events. All you need is to join.
+          <h1 style="text-align: left">Our Programs</h1>
+          <p>We hope to be able to provide students with the necessary skills and resources to succeed in their careers and entrepreneurial endeavors through various experiential opportunities and funding initiatives. Here are some of the programs we offer to all LaunchDeck members.
           <h2><strong></strong></h2>
-          <a class="ui huge garnet button" target="_blank" href="https://forms.gle/u1ucBh6QGtGi9ktv5" id="contactus">Join Here</a></p>
           </div>
         <div class="six wide right floated column">
           <img class="ui medium circular image" src="images/amphitheatre.jpeg">
@@ -59,9 +65,14 @@
           <img class="ui medium circular image" src="images/funding1.png">
         </div>
         <div class="eight wide column">
-          <h1 style="text-align: left">Get Funding</h1>
-          <p>Have an idea? We'll provide up to $500 and a network of mentors to launch your project.
-            <div><a class="ui huge garnet button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSchJxQh4P7PR58oAjqgOul2x7s1kGAGno0lQYiMdyTg7GL_Pg/viewform" id="contactus">Apply for Funding</a></div>
+          <h1 style="text-align: left">Launch Fellows</h1>
+          <p>Launch Fellows are distinguished underclassmen LaunchDeck members selected to participate in a semester-long mentorship program with an upperclassmen with internship experience in their field of interests.
+            <div><a class="ui huge garnet button" id="fellows-more">Learn More</a></div>
+          </p>
+          <p id="fellows">
+            What is the Launch Fellows program?
+            Launch Fellows is a mentorship program that matches distinguished underclassmen LaunchDeck members with an upperclassmen mentor with experience in their field of interest that will help guide the student as the explore what career they want to pursue and prepare to apply for internships.
+            <a class="ui huge garnet button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSchJxQh4P7PR58oAjqgOul2x7s1kGAGno0lQYiMdyTg7GL_Pg/viewform">Apply Here</a>
           </p>
         </div>
       </div>
@@ -72,9 +83,9 @@
     <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <h1 style="text-align: left">Get Connected</h1>
-          <p>Join hands-on workshops to learn practical skills like mobile and web development. No prior experience is needed.
-            <div><a class="ui huge garnet button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSec59Z9R2V4VpC4iNlxp8KGkxNAxJ7N5UwCIoHqz8pXappOmQ/viewform" id="contactus">Register for Workshops</a></div>
+          <h1 style="text-align: left">Project funding</h1>
+          <p>Have a startup idea you want to try to build out or is there a new skill or technology you want to learn? Apply to get funding from LaunchDeck.
+            <div><a class="ui huge garnet button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSchJxQh4P7PR58oAjqgOul2x7s1kGAGno0lQYiMdyTg7GL_Pg/viewform" id="contactus">Apply for Funding</a></div>
           </p>
         </div>
         <div class="six wide right floated column">
@@ -90,11 +101,25 @@
           <img class="ui medium circular image" src="images/inspire1.png">
         </div>
         <div class="eight wide column">
-          <h1 style="text-align: left">Get Inspired</h1>
+          <h1 style="text-align: left">Weekly LaunchTalks</h1>
           <p>Attend speaker events with leading CEOs, entrepreneurs, and tech professionals. Expand both your network and knowledge.
             <div><a class="ui huge garnet button" target="_blank" href="https://forms.gle/u1ucBh6QGtGi9ktv5" id="contactus">Register for Events</a></div>
           </p>
           </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical stripe segment container" style="padding-top: 2em">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h1 style="text-align: left">Hackathons</h1>
+          <p>LaunchDeck holds school-wide hackathons or "local hack days" where students get the chance to ideate and build a real minimum viable product (MVP).
+          </p>
+        </div>
+        <div class="six wide right floated column">
+          <img class="ui medium circular image" src="images/connect1.png">
+        </div>
       </div>
     </div>
   </div>
