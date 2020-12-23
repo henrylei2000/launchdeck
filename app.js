@@ -40,7 +40,7 @@ app.get('/upcoming', function(req, res) {
 app.get('/programs', function(req, res) {
     res.sendFile(path.join(__dirname + '/programs.html'));
 });
-app.get('/launchfellows', function(req, res) {
+app.get('/launch-fellows', function(req, res) {
     res.sendFile(path.join(__dirname + '/launchfellows.html'));
 });
 // catch 404 and forward to error handler
