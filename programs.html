@@ -18,13 +18,6 @@
   $(document).ready(function() {
     $('.message .close').on('click', function() {$(this).closest('.message').transition('fade');});
     $('.special.cards .image').dimmer({on: 'hover'});
-
-    $('#fellows').hide();
-
-    $('#fellows-more').click(function(e) {
-      e.preventDefault();
-      $('#fellows').show();
-    });
   });
   </script>
 </head>
@@ -35,24 +28,20 @@
     <div class="item">
       <img src="images/swatlaunch.png">
     </div>
-    <a class="item">Home</a>
+    <a class="item" href="./">Home</a>
     <a class="item" href="./upcoming">Upcoming</a>
     <a class="item" href="./resources">Resources</a>
     <a class="active item" href="./programs">Programs</a>
+    <!--<a class="active item" href="./launchfellows">LaunchFellows</a>-->
     <a class="item" href="./about">About</a>
   </div>
 
   <div class="ui vertical stripe segment container" style="padding-top: 2em">
     <div class="ui middle aligned stackable grid container">
       <div class="row">
-        <div class="eight wide column">
+        <div class="fifteen wide column">
           <h1 style="text-align: left">Our Programs</h1>
           <p>We hope to be able to provide students with the necessary skills and resources to succeed in their careers and entrepreneurial endeavors through various experiential opportunities and funding initiatives. Here are some of the programs we offer to all LaunchDeck members.
-          <h2><strong></strong></h2>
-          </div>
-        <div class="six wide right floated column">
-          <img class="ui medium circular image" src="images/amphitheatre.jpeg">
-
         </div>
       </div>
     </div>
@@ -67,20 +56,11 @@
         <div class="eight wide column">
           <h1 style="text-align: left">Launch Fellows</h1>
           <p>Launch Fellows are distinguished underclassmen LaunchDeck members selected to participate in a semester-long mentorship program with an upperclassmen with internship experience in their field of interests.
-            <div><a class="ui huge garnet button" id="fellows-more">Learn More</a></div>
-          </p>
-          <p id="fellows">
-            What is the Launch Fellows program?
-            Launch Fellows is a mentorship program that matches distinguished underclassmen LaunchDeck members with an upperclassmen mentor with experience in their field of interest that will help guide the student as the explore what career they want to pursue and prepare to apply for internships.
-            <a class="ui huge garnet button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSchJxQh4P7PR58oAjqgOul2x7s1kGAGno0lQYiMdyTg7GL_Pg/viewform">Apply Here</a>
+            <div><a class="ui huge garnet button" href="./launchfellows" id="fellows-more">Learn More</a></div>
           </p>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="ui vertical stripe segment container" style="padding-top: 2em">
-    <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
           <h1 style="text-align: left">Project funding</h1>
@@ -92,10 +72,7 @@
           <img class="ui medium circular image" src="images/connect1.png">
         </div>
       </div>
-    </div>
-  </div>
-  <div class="ui vertical stripe segment container" style="padding-top: 2em">
-    <div class="ui middle aligned stackable grid container">
+
       <div class="row">
         <div class="six wide left floated column">
           <img class="ui medium circular image" src="images/inspire1.png">
@@ -107,10 +84,7 @@
           </p>
           </div>
       </div>
-    </div>
-  </div>
-  <div class="ui vertical stripe segment container" style="padding-top: 2em">
-    <div class="ui middle aligned stackable grid container">
+
       <div class="row">
         <div class="eight wide column">
           <h1 style="text-align: left">Hackathons</h1>
@@ -121,8 +95,12 @@
           <img class="ui medium circular image" src="images/connect1.png">
         </div>
       </div>
+
     </div>
   </div>
+
+
+
 </div>
 
 <div class="ui inverted vertical footer segment" style="background-color: #631919">
