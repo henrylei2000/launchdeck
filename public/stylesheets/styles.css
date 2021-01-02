@@ -41,3 +41,31 @@
 .garnet {
   color: #631919;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.ui.stupid.menu .active.item {
+    border-color: #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+
+.ui.stupid.menu .item {
+    border-bottom-style: none !important;
+    border-color: #F4BBBB !important;
+    color: #F4BBBB !important;
+}
+
+.parent {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
