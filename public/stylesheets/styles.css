@@ -61,6 +61,7 @@
     color: #F4BBBB !important;
 }
 
+
 .parent {
   position: relative;
 }
@@ -68,4 +69,40 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+
+* {
+  font-family: 'Airbnb Cereal App Book', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+font-family: 'Airbnb Cereal App Book';
+font-style: normal;
+font-weight: normal;
+src: local('Airbnb Cereal App Book'), url('AirbnbCerealBook.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Airbnb Cereal App Light';
+font-style: normal;
+font-weight: normal;
+src: local('Airbnb Cereal App Light'), url('AirbnbCerealLight.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Airbnb Cereal App Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Airbnb Cereal App Medium'), url('AirbnbCerealMedium.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Airbnb Cereal App Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Airbnb Cereal App Bold'), url('AirbnbCerealBold.woff') format('woff');
 }
