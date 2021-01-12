@@ -76,6 +76,16 @@
   font-family: 'Airbnb Cereal App Book', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-family:'Airbnb Cereal App Medium' !important;
+  font-weight:normal;
+  font-size:2em
+}
+
+.ui .button {
+  font-family:'Airbnb Cereal App Medium' !important;
+}
+
 @font-face {
 font-family: 'Airbnb Cereal App Book';
 font-style: normal;
