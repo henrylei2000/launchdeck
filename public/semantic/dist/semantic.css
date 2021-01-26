@@ -515,7 +515,7 @@ body {
 }
 
 html {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 body {
@@ -549,15 +549,15 @@ h5 {
 
 h1 {
   min-height: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 1.71428571rem;
+  font-size: 5.21428571rem;
 }
 
 h3 {
-  font-size: 1.28571429rem;
+  font-size: 3.28571429rem;
 }
 
 h4 {
@@ -1428,7 +1428,7 @@ input::selection {
 .ui.superhuge.buttons .button,
 .ui.superhuge.buttons .or,
 .ui.superhuge.button {
-  font-size: 2.42857143rem;
+  font-size: 2.32857143rem;
 }
 
 .ui.huge.buttons .button,

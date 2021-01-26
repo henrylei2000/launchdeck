@@ -42,6 +42,11 @@
   color: #631919;
 }
 
+.reddy {
+  color: #ffffff !important;
+  background: #9c3d3d !important;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -50,12 +55,12 @@
 }
 
 
-.ui.stupid.menu .active.item {
+.ui.smart.menu .active.item {
     border-color: #FFFFFF !important;
     color: #FFFFFF !important;
 }
 
-.ui.stupid.menu .item {
+.ui.smart.menu .item {
     border-bottom-style: none !important;
     border-color: #F4BBBB !important;
     color: #F4BBBB !important;
@@ -71,6 +76,10 @@
   transform: translateY(-50%);
 }
 
+.bottom-aligned {
+  position: absolute;
+  bottom: 0;
+}
 
 * {
   font-family: 'Airbnb Cereal App Book', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -84,6 +93,26 @@ h1 {
 
 .ui .button {
   font-family:'Airbnb Cereal App Medium' !important;
+}
+
+/*fixed nav bar*/
+
+#page-container {
+    position: absolute;
+    width: 400px;
+}
+
+.ontop {
+    position: fixed;
+    width: 400px;
+    height: 50px;
+    background: cyan;
+}
+
+#content-holder {
+    margin-top: 50px;
+    background: yellow;
+    height: 1000px; /*to get some scrolling*/
 }
 
 @font-face {
