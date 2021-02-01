@@ -553,11 +553,11 @@ h1 {
 }
 
 h2 {
-  font-size: 5.21428571rem;
+  font-size: 5.21428571vmax;
 }
 
 h3 {
-  font-size: 3.28571429rem;
+  font-size: 3.08571429vmax;
 }
 
 h4 {
@@ -583,6 +583,9 @@ h4:last-child,
 h5:last-child {
   margin-bottom: 0em;
 }
+
+/*make arc disappear on mobile view*/
+
 
 /*******************************
              Text
@@ -1428,7 +1431,7 @@ input::selection {
 .ui.superhuge.buttons .button,
 .ui.superhuge.buttons .or,
 .ui.superhuge.button {
-  font-size: 2.32857143rem;
+  font-size: 2.52857143vw;
 }
 
 .ui.huge.buttons .button,
