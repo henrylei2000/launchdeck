@@ -1431,7 +1431,7 @@ input::selection {
 .ui.superhuge.buttons .button,
 .ui.superhuge.buttons .or,
 .ui.superhuge.button {
-  font-size: 2.52857143vw;
+  font-size: 2.22857143rem;
 }
 
 .ui.huge.buttons .button,
@@ -4802,23 +4802,45 @@ input::selection {
 
 /* Large Monitor */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 2559px)  {
   .ui.container {
-    width: 1127px;
+    width: 92%;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
   .ui.grid.container {
-    width: calc( 1127px  +  2rem ) !important;
+    width: calc( 90%  +  2rem ) !important;
   }
 
   .ui.relaxed.grid.container {
-    width: calc( 1127px  +  3rem ) !important;
+    width: calc( 90%  +  3rem ) !important;
   }
 
   .ui.very.relaxed.grid.container {
-    width: calc( 1127px  +  5rem ) !important;
+    width: calc( 90%  +  5rem ) !important;
+  }
+}
+
+/* Large Monitor */
+
+@media only screen and (min-width: 2560px) {
+  .ui.container {
+    width: 2254px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .ui.grid.container {
+    width: calc( 2254px  +  2rem ) !important;
+  }
+
+  .ui.relaxed.grid.container {
+    width: calc( 2254px  +  3rem ) !important;
+  }
+
+  .ui.very.relaxed.grid.container {
+    width: calc( 2254px  +  5rem ) !important;
   }
 }
 

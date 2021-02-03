@@ -28,9 +28,7 @@ app.use('/users', usersRouter);
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
-app.get('/resources', function(req, res) {
-    res.sendFile(path.join(__dirname + '/resources.html'));
-});
+
 app.get('/about', function(req, res) {
     res.sendFile(path.join(__dirname + '/about.html'));
 });
@@ -39,6 +37,9 @@ app.get('/events', function(req, res) {
 });
 app.get('/programs', function(req, res) {
     res.sendFile(path.join(__dirname + '/programs.html'));
+});
+app.get('/blog', function(req, res) {
+    res.sendFile(path.join(__dirname + '/blog.html'));
 });
 app.get('/launch-fellows', function(req, res) {
     res.sendFile(path.join(__dirname + '/launchfellows.html'));
