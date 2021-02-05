@@ -9,16 +9,18 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/swatlaunch.png" />
   <link rel="stylesheet" href="stylesheets/styles.css">
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="../semantic/dist/semantic.min.js"></script>
-  <script src="../semantic/dist/components/visibility.js"></script>
-  <script src="../semantic/dist/components/sidebar.js"></script>
-  <script src="../semantic/dist/components/transition.js"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
   <script>
-  $(document).ready(function() {
-    $('.message .close').on('click', function() {$(this).closest('.message').transition('fade');});
-    $('.special.cards .image').dimmer({on: 'hover'});
-  });
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
   </script>
 </head>
 <body>
@@ -26,12 +28,15 @@
   <div class="parent" style="background: #51101D; justify-content: center;">
     <div style="position: fixed; width: 100%;z-index:1;background: #51101D;padding-left:10%; padding-right:10%;">
       <img src="images/landlogo.png" width="180px" style="min-height: 20%">
-      <div class="ui large smart secondary pointing menu" style="margin-bottom:0;margin-right:80px auto;float:right; min-height: 20%">
+      <div class="ui large smart secondary pointing menu topnav" id="myTopnav" style="margin-bottom:0;margin-right:80px auto;float:right; min-height: 20%">
         <a class="item" style="text-align:right;font-size:1.3em" href="./">Home</a>
         <a class="item" style="text-align:right;font-size:1.3em" href="./about">About</a>
         <a class="item" style="text-align:right;font-size:1.3em" href="./events">Events</a>
         <a class="active item" style="text-align:right;font-size:1.3em" href="./programs">Programs</a>
         <a class="item" style="text-align:right;font-size:1.3em" target="_blank" href="https://medium.com/swarthmore-launchdeck" id="contactus">Blog</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </div>
   </div>

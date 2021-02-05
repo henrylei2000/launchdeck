@@ -1431,7 +1431,7 @@ input::selection {
 .ui.superhuge.buttons .button,
 .ui.superhuge.buttons .or,
 .ui.superhuge.button {
-  font-size: 2.22857143rem;
+  font-size: 2.62857143vw;
 }
 
 .ui.huge.buttons .button,
