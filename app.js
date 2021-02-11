@@ -44,6 +44,9 @@ app.get('/blog', function(req, res) {
 app.get('/launch-fellows', function(req, res) {
     res.sendFile(path.join(__dirname + '/launchfellows.html'));
 });
+app.get('/project-funding', function(req, res) {
+    res.sendFile(path.join(__dirname + '/projectfunding.html'));
+});
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

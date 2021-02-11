@@ -203,4 +203,115 @@ src: local('Airbnb Cereal App Bold'), url('AirbnbCerealBold.woff') format('woff'
   .responsive a.item:not(:first-child) {
     visibility: visible !important;
   }
+  img#optionalsplash {
+    display: none;
+  }
+  #joinus {
+    font-size: 2em !important;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  #optionaltitle {
+    display: none;
+  }
+  #joinus {
+    font-size: 1em !important;
+  }
+}
+
+#overlay {
+   z-index: 2;
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: rgba(0,0,0,0.8);
+   display: none;
+}
+
+#overlay2 {
+   z-index: 2;
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: rgba(0,0,0,0.8);
+   display: none;
+}
+
+#overlay3 {
+   z-index: 2;
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: rgba(0,0,0,0.8);
+   display: none;
+}
+
+#popup {
+   max-width: 500px;
+   width: 80%;
+   max-height: 700px;
+   height: 80%;
+   padding: 20px;
+   position: relative;
+   background: #fff;
+   margin: 20px auto;
+}
+
+#popup2 {
+   max-width: 500px;
+   width: 80%;
+   max-height: 800px;
+   height: 80%;
+   padding: 20px;
+   position: relative;
+   background: #fff;
+   margin: 20px auto;
+}
+
+#popup3 {
+   max-width: 500px;
+   width: 80%;
+   max-height: 700px;
+   height: 80%;
+   padding: 20px;
+   position: relative;
+   background: #fff;
+   margin: 20px auto;
+}
+
+#close {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   color: #000;
+}
+
+#close2 {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   color: #000;
+}
+
+#close3 {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   color: #000;
 }
