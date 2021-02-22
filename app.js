@@ -41,6 +41,9 @@ app.get('/programs', function(req, res) {
 app.get('/blog', function(req, res) {
     res.sendFile(path.join(__dirname + '/blog.html'));
 });
+app.get('/resources', function(req, res) {
+    res.sendFile(path.join(__dirname + '/resources.html'));
+});
 app.get('/launch-fellows', function(req, res) {
     res.sendFile(path.join(__dirname + '/launchfellows.html'));
 });
