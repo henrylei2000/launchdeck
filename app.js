@@ -38,9 +38,6 @@ app.get('/events', function(req, res) {
 app.get('/programs', function(req, res) {
     res.sendFile(path.join(__dirname + '/programs.html'));
 });
-app.get('/blog', function(req, res) {
-    res.sendFile(path.join(__dirname + '/blog.html'));
-});
 app.get('/resources', function(req, res) {
     res.sendFile(path.join(__dirname + '/resources.html'));
 });
