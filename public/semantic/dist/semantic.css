@@ -1444,6 +1444,10 @@ input::selection {
   font-size: 1.42857143rem;
 }
 
+.ui.huge.button:focus {
+    background-color:#9c3d3d !important;
+}
+
 .ui.massive.buttons .button,
 .ui.massive.buttons .or,
 .ui.massive.button {
