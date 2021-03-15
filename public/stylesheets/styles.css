@@ -95,6 +95,12 @@ h1 {
   font-family:'Airbnb Cereal App Medium' !important;
 }
 
+.name {
+  font-size: 0.8em !important;
+  text-decoration: none;
+  color: #4183C4;
+}
+
 /*fixed nav bar*/
 
 #page-container {
@@ -314,6 +320,17 @@ src: local('Airbnb Cereal App Bold'), url('AirbnbCerealBold.woff') format('woff'
    right: 10px;
    cursor: pointer;
    color: #000;
+}
+
+.arrow {
+  margin-top: 0;
+  display: inline-block;
+  transition: transform 0.8s linear;
+  cursor: pointer;
+}
+
+.arrow.reverse {
+  transform: rotateX(180deg);
 }
 
 /*dropdown*/
