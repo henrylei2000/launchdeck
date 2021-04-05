@@ -91,6 +91,12 @@ h1 {
   font-weight:normal;
 }
 
+h2 {
+  font-family:'Airbnb Cereal App Medium' !important;
+  font-weight:normal;
+  font-size: 1em !important;
+}
+
 .ui .button {
   font-family:'Airbnb Cereal App Medium' !important;
 }
